@@ -21,12 +21,12 @@ class BasicTests(unittest.TestCase):
         response = self.app.get('/', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
-    def test_main_page_index(self):
-        response = self.app.get('/signup', follow_redirects=True)
+    def test_signup_page(self):
+        response = self.app.get('/showSignUp', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
-    def test_main_page_index(self):
-        response = self.app.get('/signin', follow_redirects=True)
+    def test_signin_page(self):
+        response = self.app.get('/showSignIn', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
 if __name__ == "__main__":
