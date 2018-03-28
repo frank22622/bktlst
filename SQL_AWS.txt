@@ -72,3 +72,8 @@ END$$
 DELIMITER ;
 ===========================
 set log_bin_trust_function_creators=1
+===========================
+app.config['MYSQL_DATABASE_USER'] = 'zhuhan'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'zhuhanzhuhan'
+app.config['MYSQL_DATABASE_DB'] = 'BucketList'
+app.config['MYSQL_DATABASE_HOST'] = 'rds-mysql.cmtn82vjvhv1.us-west-2.rds.amazonaws.com'
